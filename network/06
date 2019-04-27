@@ -1,1 +1,1 @@
-echo /etc/resolv.conf
+/etc/resolv.conf
