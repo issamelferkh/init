@@ -1,0 +1,766 @@
+
+<h3 class="font-weight-bold mb-1">Partie 1 - Network</h3>
+<p class="font-italic">Evaluation de la partie 2 du sujet - Network</p>
+</div>
+<h4 class="scale-question-name">Récupérez la liste des interfaces réseau de la machine sans afficher aucun détail</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>liste les noms des interfaces présentes sur la machine et aucune
+<br>autre information. 
+<br>
+<br>Par exemple:
+<br>$&gt;`cat 01`
+<br>lo0 gif0 stf0 en0 en1 en2 en3 p2p0 awdl0 bridge0
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][0][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13347" name="[scale_team][answers_attributes][0][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Identifiez et affichez les caractéristiques de l’interface Ethernet</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>identifie et affiche l’adresse de broadcast ET toutes les 
+<br>adresses IP qui font partie du même sous-réseau
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][1][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13348" name="[scale_team][answers_attributes][1][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Identifiez l’adresse MAC de la carte Wi-Fi</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>identifie et affiche l'adresse mac de l'interface wifi. Par
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 03`
+<br>xxn: flags=XXXX<up,broadcast,smart,running,simplex,multicast>
+<br>     ether 00:00:00:00:00:00
+<br>$&gt;
+</up,broadcast,smart,running,simplex,multicast></p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][2][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13349" name="[scale_team][answers_attributes][2][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Identifiez la gateway par défaut dans la table de routage</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>identifie et affiche la gateway par défaut dans la table de
+<br>routage. 
+<br>Par exemple:
+<br>
+<br>$&gt;sh 04
+<br>default            42.42.42.42        UGSc           19       16     en0
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][3][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13350" name="[scale_team][answers_attributes][3][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Identifiez l’IP du serveur DNS qui répond sur le domaine suivant - slash16.org</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>identifie et affiche l'IP du serveur DNS. 
+<br>
+<br>Par exemple:
+<br>$&gt;`cat 05`
+<br>Server:10.51.1.42
+<br>Address:10.51.1.42
+<br>
+<br>Non-authoritative answer:
+<br>Name:slash16.org
+<br>Address: 195.154.52.157
+<br>Name:slash16.org
+<br>Address: 195.154.52.158
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][4][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13351" name="[scale_team][answers_attributes][4][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Récupérez le path complet du fichier dans lequel est écrit l’adresse IP du serveur DNS que vous utilisez</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient le path du fichier
+<br>des serveurs DNS utilisés.
+<br>
+<br>$&gt;cat 06
+<br>/etc/resolv.conf
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][5][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13352" name="[scale_team][answers_attributes][5][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Interrogez un serveur DNS externe sur le même nom de domaine (ex, google 8.8.8.8)</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>utilise un autre serveur DNS pour résoudre le même nom de
+<br>domaine.
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 07`
+<br>Server:8.8.8.8
+<br>Address:8.8.8.8
+<br>
+<br>Non-authoritative answer:
+<br>Name:slash16.org
+<br>Address: 195.154.52.157
+<br>Name:slash16.org
+<br>Address: 195.154.52.158
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][6][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13353" name="[scale_team][answers_attributes][6][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouver l'hébergeur de Slash16</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'étudiant est AWS (Amazon Web Services).
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][7][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13354" name="[scale_team][answers_attributes][7][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouver l'IP Publique de 42.fr</h4>
+<p class="scale-section-guidelines">
+<br>Demandez au corrigé de vous montrer sa démarche et de l'expliquer.
+<br>Vérifiez que la réponse de l'étudiant est 163.172.250.12 et/ou 163.172.250.11.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][8][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13355" name="[scale_team][answers_attributes][8][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Identifiez les différents appareils réseaux entre votre poste et le domaine slash16.org</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>identifie et affiche les differents serveurs entre votre poste et slash16.org.
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 10`
+<br>traceroute to slash16.org (195.154.52.158), 64 hops max, 52 byte packets
+<br>1  10.8.0.1 (10.8.0.1)  5.809 ms  6.087 ms  3.124 ms
+<br>2  10.42.1.254 (10.42.1.254)  6.005 ms  13.668 ms  7.037 ms
+<br>3  nat-1.42.fr (10.60.1.11)  7.530 ms  3.379 ms  9.966 ms
+<br>4  dc3.42.fr (62.210.35.1)  7.100 ms  7.587 ms  5.160 ms
+<br>5  195.154.1.174 (195.154.1.174)  57.350 ms  168.093 ms  8.906 ms
+<br>6  a9k2-45x-s44-2.dc3.poneytelecom.eu (195.154.1.106)  6.590 ms  3.910 ms  5.525 ms
+<br>7  195.154.1.179 (195.154.1.179)  4.077 ms  46.904 ms  3.883 ms
+<br>8  pub-1.slash16.org (195.154.52.158)  5.699 ms  6.034 ms  7.632 ms
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][9][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13356" name="[scale_team][answers_attributes][9][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel qui fait le lien entre vous et l’extérieur</h4>
+<p class="scale-section-guidelines">
+Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien le serveur de NAT.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][10][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13357" name="[scale_team][answers_attributes][10][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouvez l’IP qui vous a été assignée par le serveur dhcp</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui affiche l'ip du
+<br>host de l'étudiant.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][11][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13358" name="[scale_team][answers_attributes][11][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Grâce a la question précédente et au reverse DNS retrouvez le nom de votre host</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien le nom de l'host de l'étudiant.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][12][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13359" name="[scale_team][answers_attributes][12][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quel est le fichier contenant les entrées locales DNS ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien /etc/hosts.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][13][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13360" name="[scale_team][answers_attributes][13][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Faites pointer l’adresse intra.42.fr sur l’adresse suivante 46.19.122.85</h4>
+<p class="scale-section-guidelines">
+<br>Demandez au corrigé de vous montrer sa démarche et de l'expliquer.
+<br>Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien '46.19.122.85 intra.42.fr'.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][14][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13361" name="[scale_team][answers_attributes][14][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-4083">
+<div class="section-header">
+<hr>
+<h3 class="font-weight-bold mb-1">Partie 2 - System</h3>
+<p class="font-italic">Evaluation de la partie 3 - System</p>
+</div>
+<h4 class="scale-question-name">Dans quel fichier se trouve la version installée de votre Debian ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'etudiant dans le fichier
+<br>est bien /etc/debian_version.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][15][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13362" name="[scale_team][answers_attributes][15][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande permet de renommer votre système ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>renomme le systeme. 
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 02`
+<br>machine.old.name.local
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][16][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13363" name="[scale_team][answers_attributes][16][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quel est le fichier à modifier pour rendre cela permanent ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien /etc/hostname.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][17][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13364" name="[scale_team][answers_attributes][17][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande donne le temps depuis lequel votre système à été démarré la dernière fois ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>donne le temps depuis laquelle votre système est allume. 
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 04`
+<br>17:44  up 1 day,  6:45, 4 users, load averages: 1.33 1.42 1.40
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][18][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13365" name="[scale_team][answers_attributes][18][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Déterminez l’état du service SSH</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>determine l'état du service SSH. 
+<br>Par exemple avec init.d:
+<br>
+<br>$&gt;`cat 05`
+<br>openssh-daemon (pid  22405) is running...
+<br>$&gt;
+<br>
+<br>Ou bien avec service :
+<br>
+<br>$&gt;`cat 05`
+<br>● ssh.service - OpenBSD Secure Shell server
+<br>  Loaded: loaded (/lib/systemd/system/ssh.service; enabled)
+<br>  Active: active (running) since Fri 2016-12-02 18:42:05 CET; 1 months 0 days ago
+<br>  Main PID: 13106 (sshd)
+<br>  CGroup: /system.slice/ssh.service
+<br>       ├─ 2461 ssh-agent -s
+<br>       ├─13106 /usr/sbin/sshd -D
+<br>       ├─27517 sshd: skyline [priv]
+<br>       ├─27519 sshd: skyline@pts/0
+<br>       ├─27520 -zsh
+<br>       ├─27561 sudo su
+<br>       ├─27562 su
+<br>       ├─27563 zsh
+<br>       └─27589 systemctl status sshd.service
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][19][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13366" name="[scale_team][answers_attributes][19][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Donnez la commande pour le redémarrer</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>redemarre le service SSH. 
+<br>Par exemple avec init.d:
+<br>
+<br>$&gt;`cat 06`
+<br>Stopping sshd:                                             [  OK  ]
+<br>Starting sshd:                                             [  OK  ]
+<br>$&gt;
+<br>
+<br>Ou bien avec service :
+<br>
+<br>$&gt;`cat 06`
+<br>$&gt; service sshd status
+<br>● ssh.service - OpenBSD Secure Shell server
+<br>  Loaded: loaded (/lib/systemd/system/ssh.service; enabled)
+<br>  Active: active (running) since Fri 2016-12-02 18:42:05 CET; 10s ago
+<br>  Main PID: 13106 (sshd)
+<br>  CGroup: /system.slice/ssh.service
+<br>       ├─ 2461 ssh-agent -s
+<br>       ├─13106 /usr/sbin/sshd -D
+<br>       ├─27517 sshd: skyline [priv]
+<br>       ├─27519 sshd: skyline@pts/0
+<br>       ├─27520 -zsh
+<br>       ├─27561 sudo su
+<br>       ├─27562 su
+<br>       ├─27563 zsh
+<br>       └─27589 systemctl status sshd.service
+<br>$&gt;
+<br>
+<br>Le temps dans Active doit donc être en secondes à cause du restart de sshd.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][20][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13367" name="[scale_team][answers_attributes][20][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Déterminez le PID du service SSHD</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>determine le PID du service SSH. 
+<br>Par exemple :
+<br>
+<br>$&gt;`cat 07`
+<br>root     22405  0.0  0.0  66224  1184 ?        Ss   17:46   0:00 /usr/sbin/sshd
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][21][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13368" name="[scale_team][answers_attributes][21][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien .ssh/authorized_keys
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][22][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13369" name="[scale_team][answers_attributes][22][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande permet de savoir quelles personnes sont connectées sur le système ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>permet de savoir qui est sur le système. 
+<br>Par exemple :
+<br>
+<br>$&gt;`cat 09`
+<br>skyline      console  Mar 23 10:59
+<br>skyline      ttys000  Mar 24 17:04
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][23][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13370" name="[scale_team][answers_attributes][23][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande permet de lister les tables de partitions des disques ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>permet de lister les tables de partitions des disques.
+<br>Par exemple :
+<br>
+<br>$&gt;`cat 10`
+<br>Disk /dev/sdb: 2000.4 GB, 2000398934016 bytes
+<br>255 heads, 63 sectors/track, 243201 cylinders
+<br>Units = cylinders of 16065 * 512 = 8225280 bytes
+<br>Sector size (logical/physical): 512 bytes / 512 bytes
+<br>I/O size (minimum/optimal): 512 bytes / 512 bytes
+<br>Disk identifier: 0x00000000
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][24][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13371" name="[scale_team][answers_attributes][24][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande permet d’afficher l’espace disponible et utilisé sur le système d'une manière humainement compréhensible ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>permet d'afficher l'espace disponible et utilisé sur le système d'une manière humainement compréhensible ?.
+<br>Par exemple :
+<br>
+<br>$&gt;`cat 11`
+<br>Filesystem      Size  Used Avail Use% Mounted on
+<br>/dev/xvda2      7.8G  1.2G  6.3G  16% /
+<br>udev             10M     0   10M   0% /dev
+<br>tmpfs           200M  4.2M  196M   3% /run
+<br>tmpfs           500M     0  500M   0% /dev/shm
+<br>tmpfs           5.0M     0  5.0M   0% /run/lock
+<br>tmpfs           500M     0  500M   0% /sys/fs/cgroup
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][25][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13372" name="[scale_team][answers_attributes][25][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Déterminez la taille exacte de chaque dossier de /var d'une manière humainement compréhensible suivi du chemin de celui-ci.</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>permet d'afficher la taille exacte de chaque dossier de /var d'une manière 
+<br>humainement compréhensible suivi du chemin de celui-ci.
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 12`
+<br>4.0K	/var/opt
+<br>864K	/var/spool
+<br>1.3M	/var/log
+<br>111M	/var/lib
+<br>124M	/var/cache
+<br>4.0K	/var/local
+<br>8.0K	/var/mail
+<br>1.1M	/var/backups
+<br>4.0K	/var/tmp
+<br>238M	/var
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][26][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13373" name="[scale_team][answers_attributes][26][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouvez la commande qui permet, en temps réel, de trouver les processus en cours d’exécution</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient la commande qui
+<br>permet d'afficher les processus en cours d execution en temps reel.
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 13`
+<br>Tasks:  58 total,   1 running,  57 sleeping,   0 stopped,   0 zombie
+<br>%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+<br>KiB Mem:   1022952 total,   359176 used,   663776 free,   168200 buffers
+<br>KiB Swap:        0 total,        0 used,        0 free.    86924 cached Mem
+<br>
+<br> PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+<br>   1 root      20   0   28740   4760   3064 S  0.0  0.5   0:03.28 systemd
+<br>   2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+<br>   3 root      20   0       0      0      0 S  0.0  0.0   0:00.02 ksoftirqd/0
+<br>   5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][27][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13374" name="[scale_team][answers_attributes][27][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Lancez en background la commande tail -f /var/log/syslog</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>permet de lancer en background la commande tail -f /var/log/syslog
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 14`
+<br>[1] 2660
+<br>Mar 25 06:25:03 rsyslogd: [origin software="rsyslogd" swVersion="8.4.2" x-pid="330" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+<br>Mar 25 07:17:01 CRON[2601]: (root) CMD (   cd / &amp;&amp; run-parts --report /etc/cron.hourly)
+<br>Mar 25 08:17:01 CRON[2656]: (root) CMD (   cd / &amp;&amp; run-parts --report /etc/cron.hourly)
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][28][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13375" name="[scale_team][answers_attributes][28][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouvez la commande qui permet de tuer le processus de la commande en background</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient la commande qui
+<br>permet de tuer le processus du tail -f /var/log/syslog.
+<br>Par exemple:
+<br>
+<br>$&gt;`cat 15`
+<br>[1]+  Terminated              tail -f /var/log/syslog
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][29][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13376" name="[scale_team][answers_attributes][29][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouvez le service qui permet de lancer des tâches à horaires régulières</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse de l'étudiant dans le fichier
+<br>est bien cron.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][30][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13377" name="[scale_team][answers_attributes][30][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Trouvez une commande qui, en parallèle de la session graphique, permet de se connecter en ssh sur la machine</h4>
+<p class="scale-section-guidelines">
+<br>Verifiez que le fichier de réponse contient une commande qui permet de
+<br>se connecter en ssh sur la machine
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][31][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13378" name="[scale_team][answers_attributes][31][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Donnez une commande qui permet d’arrêter le service ssh</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui
+<br>permet de d'arrêter le service ssh
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][32][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13379" name="[scale_team][answers_attributes][32][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Listez les services qui se lancent automatiquement lorsque la machine boot et indiquez le nom donné à ce type de service</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient la liste des services qui se 
+<br>lancent automatiquement lorsque la machine boot ainsi que le type de service
+<br>daemon
+<br>
+<br>Par exemple:
+<br>$&gt; /sbin/chkconfig --list 
+<br>atd 0:off 1:off 2:off 3:on 4:on 5:on 6:off 
+<br>xfs 0:on 1:on 2:on 3:on 4:on 5:on 6:on 
+<br>keytable 0:off 1:off 2:on 3:on 4:on 5:on 6:off 
+<br>gpm 0:off 1:off 2:on 3:on 4:on 5:on 6:off
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][33][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13380" name="[scale_team][answers_attributes][33][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Listez tout les utilisateurs existants sur la machine</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient la liste des utilisateurs
+<br>existants sur la machine
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][34][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13381" name="[scale_team][answers_attributes][34][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Listez tout les utilisateurs reels sur la machine</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient la liste des utilisateurs
+<br>réels sur la machine. Et qu’il n’y a pas les utilisateurs systèmes.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][35][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13382" name="[scale_team][answers_attributes][35][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande permet d’ajouter un utilisateur local supplémentaire ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier de réponse contient une commande qui permet d'ajoutez 
+<br>un utilisateur local supplémentaire
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][36][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13383" name="[scale_team][answers_attributes][36][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session graphique et en session ssh)</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que la réponse est claire et qu'elle explique bien comment se
+<br>connecter en session ssh (commande etc.) ET en session graphique
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][37][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13384" name="[scale_team][answers_attributes][37][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Quelle commande permet de lister tout les packages INSTALLÉS sur la machine ?</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le fichier réponse contient bien une commande qui permet
+<br>de lister tout les packages installés sur la machine.
+<br>Attention, les packages semi-installés ne doivent pas apparaître.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][38][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13385" name="[scale_team][answers_attributes][38][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-4084">
+<div class="section-header">
+<hr>
+<h3 class="font-weight-bold mb-1">Partie 3 - Scripting</h3>
+<p class="font-italic">Evalution de la partie 3 du sujet - Scripting</p>
+</div>
+<h4 class="scale-question-name">Réalisez un script qui affiche seulement le login, le UID et le Path du fichier /etc/passwd</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez que le script permet d'afficher seulement le login, le UID
+<br>et le Path du fichier /etc/passwd. 
+<br>Par exemple:
+<br>
+<br>$&gt;sh 1
+<br>root:0:/bin/bash
+<br>daemon:1:/usr/sbin/nologin
+<br>bin:2:/usr/sbin/nologin
+<br>sys:3:/usr/sbin/nologin
+<br>sync:4:/bin/sync
+<br>games:5:/usr/sbin/nologin
+<br>man:6:/usr/sbin/nologin
+<br>lp:7:/usr/sbin/nologin
+<br>mail:8:/usr/sbin/nologin
+<br>news:9:/usr/sbin/nologin
+<br>uucp:10:/usr/sbin/nologin
+<br>proxy:13:/usr/sbin/nologin
+<br>www-data:33:/usr/sbin/nologin
+<br>backup:34:/usr/sbin/nologin
+<br>list:38:/usr/sbin/nologin
+<br>irc:39:/usr/sbin/nologin
+<br>gnats:41:/usr/sbin/nologin
+<br>nobody:65534:/usr/sbin/nologin
+<br>systemd-timesync:100:/bin/false
+<br>systemd-network:101:/bin/false
+<br>systemd-resolve:102:/bin/false
+<br>systemd-bus-proxy:103:/bin/false
+<br>sshd:104:/usr/sbin/nologin
+<br>Debian-exim:105:/bin/false
+<br>postfix:106:/bin/false
+<br>skyline:1000:/bin/bash
+<br>$&gt;
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][39][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13386" name="[scale_team][answers_attributes][39][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Réaliser un script qui permet de supprimer un user LOGUE sur la machine</h4>
+<p class="scale-section-guidelines">
+<br>Verifiez que le user a bien été supprimé
+<br>Par exemple:
+<br>Créez un user.
+<br>Connectez le à la machine et faites le lancer une tâche de votre choix.
+<br>Lancer le script.
+<br>Listez les utilisateurs existants. (Le nouvel utilisateur ne doit pas apparaître.)
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][40][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13387" name="[scale_team][answers_attributes][40][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+
+</div>
+<h4 class="scale-question-name">Réaliser un script de votre choix</h4>
+<p class="scale-section-guidelines">
+<br>Vérifiez l’utilité et la complexité du script
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][41][id]" type="hidden" id="scale_team_answer_id"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="13388" name="[scale_team][answers_attributes][41][question_id]" type="hidden" id="scale_team_answer_question_id"></div></div>
+<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+<input autocomplete="off" class="star-range" data-star-range="" max="5" name="[scale_team][answers_attributes][41][value]" step="1" type="range" value="0" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"><div class="rangeslider rangeslider--horizontal" id="js-rangeslider-0"><div class="rangeslider__fill" style="width: 20px;"></div><div class="rangeslider__handle" style="left: 0px;"></div></div>
+<hr>
+</div>
+</section>
+</div>
+<div class="col-sm-12 scale-div pb-4">
+
+</div>
+<div class="col-sm-12 scale-div">
+<h3 class="font-weight-bold mb-1">Conclusion</h3>
+<div class="scale-final-evaluation hidden">
+<div class="form-group radio_buttons optional scale_team_flag"><label class="col-sm-2 control-label radio_buttons optional">Flag</label><div class="col-sm-10"><input type="hidden" name="scale_team[flag_id]" value=""></div></div>
+</div>
+<div class="scale-final-comments" id="comments-1218">
+<p class="marked-title">Leave a comment on this evaluation</p>
+<textarea required="required" label="false" class="text required col-sm-12 mb-4" aria-required="true" name="scale_team[comment]" id="scale_team_comment"></textarea>
+
+</div>
+<input id="token" name="token" class="hidden" type="hidden">
+</div>
+<div class="scale-final-submit">
+<input class="btn btn-primary btn-block font-weight-bold" data-disable-with="Finishing evaluation..." name="commit" type="submit" value="Finish evaluation">
+</div>
+</form>
+
+</div>
+</div>
+
+
+<footer class="legal-mentions text-center text-muted my-4 col-sm-12 flex justify-content-center flex-column flex-sm-row"><a class="text-muted small px-4" href="https://signin.intra.42.fr/legal/terms/6">General term of use of the site</a><a class="text-muted small px-4" href="https://signin.intra.42.fr/legal/terms/5">Privacy policy</a><a class="text-muted small px-4" href="https://signin.intra.42.fr/legal/terms/3">Legal notices</a><a class="text-muted small px-4" href="https://signin.intra.42.fr/legal/terms/2">Declaration on the use of cookies</a><a class="text-muted small px-4" href="https://signin.intra.42.fr/legal/terms/1">Terms of use for video surveillance</a><a class="text-muted small px-4" href="https://signin.intra.42.fr/legal/terms/4">Rules of procedure</a></footer>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="smartModalLabel" class="modal fade" id="smartModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="smartModalLabel">
+
+</h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title"></h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn" data-dismiss="modal">Cancel</button>
+<button class="send btn btn-primary">Send</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="flashModalLabel" class="modal fade" id="flashModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="flashModalLabel"></h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title">Flash modal content (raw)</h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-block btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<div data-cache="true" class="hide"></div>
+
+<script>
+  var jsClasses = ["new_message", "topic-reply"];
+  jsClasses.forEach(function(className) {
+    Array.prototype.forEach.call(document.getElementsByClassName(className), function (e) {
+      e.classList.add("js-hidden");
+    });
+  });
+</script>
+<script src="js.js"></script>
+
+
+
+
+</body></html>
