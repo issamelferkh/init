@@ -1,1 +1,1 @@
-e2r9p11.1337.ma
+nslookup `ipconfig getifaddr en0` | grep name | cut -c33-

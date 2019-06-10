@@ -1,4 +1,5 @@
-# init
+init
+####
 En bleu : une commande
 En vert : une sortie de commande
 En rouge : une déduction écrite avec vos propres mots
@@ -10,22 +11,61 @@ les réponses dans un fichier => network/01
 partie 1 “Network” -> réaliser sur les Macs
 partie 2 “System” et 3 “Scripting” -> réaliser sur une VM Debian
 ############################################################
+
 network
 #######
-OK: 01, 02, 04, 05, 06, 07, 08, 10, 11, 13, 14, 15
-NOK: 03, 09, 12
+01 -> ok
+02 -> ok
+03 -> ok
+04 -> ok
+05 -> ok
+06 -> ok
+07 -> ok
+08 -> ok
+09 -> ok
+10 -> ok
+11 -> ok
+12 -> ok
+13 -> ok
+14 -> ok
+15 -> ok
 
 system
 ######
-OK: 01, 03, 04, 06
-NOK: VM, 02, 05, 07 -> 24
+01 -> ok
+02 -> ok -> hostname or hostname "new name"
+03 -> ok
+04 -> ok
+05 -> ok -> check network: ip address | install ssh: sudo apt-get install -y openssh-server openssh-client
+06 -> ok
+07 -> ok
+08 -> ok
+09 ->
+10 ->
+11 ->
+12 ->
+13 ->
+14 ->
+15 ->
+16 ->
+17 ->
+18 ->
+19 ->
+20 ->
+21 ->
+22 ->
+23 ->
+24 ->
 
 scripts
 #######
-OK: 01
-NOK: 02, 03
+01 ->
+02 ->
+03 ->
 
 Questions
 #########
-* 1 or 01 ?
+* the name of file is 1 or 01 ?
+
+user: user, pwd: live
 
