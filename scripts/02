@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo pkill -u test | sudo userdel test

@@ -47,23 +47,23 @@ sudo apt-get install -y openssh-server openssh-client
 11 -> ok
 12 -> ok
 13 -> ok
-14 ->
-15 ->
+14 -> ok
+15 -> ??? -> how can I know the PID processs
 16 -> ok
-17 ->
+17 -> ??? -> ntconnecta l localhost "ssh test1@localhost" ou fine ? "ssh iel-fer@10.12.8.13"
 18 -> ok
-19 ->
-20 ->
-21 ->
-22 ->
-23 ->
+19 -> prob -> pas de chkonfig cmd
+20 -> ok
+21 -> user reel ???
+22 -> ok -> ??? creer user ou just cmd
+23 -> ??? -> expliquation
 24 -> ok
 
 scripts
 #######
 01 -> ok
-02 ->
-03 ->
+02 -> ok -> cmd or script
+03 -> in progress
 
 Questions
 #########
