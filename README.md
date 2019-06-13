@@ -15,14 +15,14 @@ partie 2 “System” et 3 “Scripting” -> réaliser sur une VM Debian
 network
 #######
 01 -> ok
-02 -> ok
+02 -> ok -> error
 03 -> ok
 04 -> ok
 05 -> ok
 06 -> ok
 07 -> ok
 08 -> ok
-09 -> ok
+09 -> ok -> cmd "dig +short 42.fr"
 10 -> ok
 11 -> ok
 12 -> ok
@@ -63,7 +63,7 @@ scripts
 #######
 01 -> ok
 02 -> ok -> cmd or script
-03 -> in progress
+03 -> in progress -> prob in Q3 | apres verifier mes reponse avec les rep reels pour etre logique
 
 Questions
 #########
@@ -71,3 +71,6 @@ Questions
 * oublier pas "sudo" pour les cmd partie systeme et script
 user: user, pwd: live
 
+
+
+01 -> 10 : valide

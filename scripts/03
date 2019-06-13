@@ -4,7 +4,6 @@ _STOP='\033[0m'
 _BLACK='\033[30m'
 _RED='\033[31m'
 _GREEN='\033[32m'
-_YELLOW='\033[33m'
 _CYAN='\033[36m'
 
 function header()
@@ -65,8 +64,8 @@ function networkpart()
 	fi
 	sleep .5
 #Q 5
-	Y_ANSWER=$(sh 05)
-	V_ANSWER=$(nslookup slash16.org)
+	Y_ANSWER=$(cat 05)
+	V_ANSWER="nslookup slash16.org"
 	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "05 $_GREEN[OK] $_STOP"
 	else
@@ -77,11 +76,18 @@ function networkpart()
 	sleep .5
 #Q 6
 	Y_ANSWER=$(cat 06)
-	echo "06 : $_YELLOW $Y_ANSWER $_STOP"
+	V_ANSWER="/etc/resolv.conf"
+	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
+		echo "06 $_GREEN[OK] $_STOP"
+	else
+		echo "06 $_RED[KO] $_STOP"
+		echo "you wrote this :  "
+		echo " $Y_ANSWER"
+	fi
 	sleep .5
 #Q 7
 	Y_ANSWER=$(cat 07)
-	V_ANSWER=$(nslookup slash16.org)
+	V_ANSWER="nslookup slash16.org 8.8.8.8"
 	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "07 $_GREEN[OK] $_STOP"
 	else
@@ -92,7 +98,7 @@ function networkpart()
 	sleep .5
 #Q 8
 	Y_ANSWER=$(cat 08)
-	V_ANSWER=$(AWS (Amazon Web Services))
+	V_ANSWER="AWS (Amazon Web Services)"
 	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "08 $_GREEN[OK] $_STOP"
 	else
@@ -103,7 +109,7 @@ function networkpart()
 	sleep .5
 #Q 9
 	Y_ANSWER=$(cat 09)
-	V_ANSWER=$(dig +short 42.fr)
+	V_ANSWER="163.172.250.11"
 	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "09 $_GREEN[OK] $_STOP"
 	else
@@ -112,29 +118,31 @@ function networkpart()
 		echo " $Y_ANSWER"
 	fi
 	sleep .5
-	sleep .5
 #Q 10
-	cat 10 | grep "traceroute slash16.org" > /dev/null
-	if [ $? ==  0 ]; then
+	Y_ANSWER=$(cat 10)
+	V_ANSWER="traceroute slash16.org"
+	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "10 $_GREEN[OK] $_STOP"
 	else
 		echo "10 $_RED[KO] $_STOP"
 		echo "you wrote this :  "
-		cat 10
+		echo " $Y_ANSWER"
 	fi
-	#Q 11
-	cat 11 | grep "nat" > /dev/null
-	if [ $? ==  0 ]; then
+	sleep .5
+#Q 11
+	Y_ANSWER=$(cat 11)
+	V_ANSWER="nat 10.21.1.1"
+	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "11 $_GREEN[OK] $_STOP"
 	else
 		echo "11 $_RED[KO] $_STOP"
 		echo "you wrote this :  "
-		cat 11
+		echo " $Y_ANSWER"
 	fi
 	sleep .5
-	#Q 12
-	Y_ANSWER=$(sh 12)
-	V_ANSWER=$(ipconfig getpacket en0 | grep yi | awk '{print $3}')
+#Q 12
+	Y_ANSWER=$(cat 12)
+	V_ANSWER=$(ipconfig getifaddr en0)
 	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "12 $_GREEN[OK] $_STOP"
 	else
@@ -143,23 +151,39 @@ function networkpart()
 		echo " $Y_ANSWER"
 	fi
 	sleep .5
-	#Q 13
-	Y_ANSWER=$(cat 13) 
-	echo "13 : $Y_ANSWER"
+#Q 13
+	Y_ANSWER=$(cat 13)
+	V_ANSWER=$(nslookup `ipconfig getifaddr en0` | grep name | cut -c33-)
+	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
+		echo "13 $_GREEN[OK] $_STOP"
+	else
+		echo "13 $_RED[KO] $_STOP"
+		echo "you wrote this :  "
+		echo " $Y_ANSWER"
+	fi
 	sleep .5
-	#Q 14
-	cat 14 | grep "/etc/hosts" > /dev/null
-	if [ $? ==  0 ]; then
+#Q 14
+	Y_ANSWER=$(cat 14)
+	V_ANSWER="/etc/hosts"
+	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "14 $_GREEN[OK] $_STOP"
 	else
 		echo "14 $_RED[KO] $_STOP"
 		echo "you wrote this :  "
-		cat 14
+		echo " $Y_ANSWER"
 	fi
 	sleep .5
-	#Q 15
+#Q 15
 	Y_ANSWER=$(cat 15)
-	echo "15 : $Y_ANSWER"
+	V_ANSWER="46.19.122.85    intra.42.fr"
+	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
+		echo "15 $_GREEN[OK] $_STOP"
+	else
+		echo "15 $_RED[KO] $_STOP"
+		echo "you wrote this :  "
+		echo " $Y_ANSWER"
+	fi
+	sleep .5
 }
 
 function systempart()
@@ -227,7 +251,9 @@ do
 		a)
 			creditspart
 		;;
-		0) break ;;
+		0) 
+			break 
+		;;
 	esac
 	read -p $'Press Enter to continue...'
 done
