@@ -14,21 +14,21 @@ partie 2 “System” et 3 “Scripting” -> réaliser sur une VM Debian
 
 network
 #######
-01 -> ok
-02 -> ok -> error
-03 -> ok
-04 -> ok
-05 -> ok
-06 -> ok
-07 -> ok
-08 -> ok
-09 -> ok -> cmd "dig +short 42.fr"
-10 -> ok
-11 -> ok
-12 -> ok
-13 -> ok
-14 -> ok
-15 -> ok
+01 -> okv
+02 -> ok -> pas suuur !!!
+03 -> okv
+04 -> okv
+05 -> okv
+06 -> okv
+07 -> okv
+08 -> okv
+09 -> okv -> cmd "dig +short 42.fr"
+10 -> okv
+11 -> okv
+12 -> okv
+13 -> okv -> nslookup `ipconfig getifaddr en0` | grep name | cut -c32-
+14 -> okv
+15 -> okv
 
 system
 ######
@@ -61,16 +61,12 @@ sudo apt-get install -y openssh-server openssh-client
 
 scripts
 #######
-01 -> ok
-02 -> ok -> cmd or script
-03 -> in progress -> prob in Q3 | apres verifier mes reponse avec les rep reels pour etre logique
+01 -> ok -> Not Verif
+02 -> ok -> Not Verif
+03 -> ok -> Not Verif
 
 Questions
 #########
-* the name of file is 1 or 01 ?
 * oublier pas "sudo" pour les cmd partie systeme et script
-user: user, pwd: live
+* user: user, pwd: live
 
-
-
-01 -> 10 : valide

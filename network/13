@@ -1,1 +1,1 @@
-nslookup `ipconfig getifaddr en0` | grep name | cut -c33-
+e2r9p15.1337.ma

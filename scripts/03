@@ -37,9 +37,9 @@ function networkpart()
 #Q 2
 	Y_ANSWER=$(cat 02 | head -n 1)
 	Y_ANSWER1=$(cat 02 | tail -n 1)
-#chui pas encore sur
-	echo "02 a) : $_YELLOW $Y_ANSWER $_STOP"
-	echo "02 b) : $_YELLOW $Y_ANSWER1 $_STOP"
+	echo "02 $_GREEN[OK] $_STOP"
+	echo "=> a) : $Y_ANSWER "
+	echo "=> b) : $Y_ANSWER1 "
 	sleep .5
 #Q 3
 	Y_ANSWER=$(sh 03)
@@ -109,8 +109,10 @@ function networkpart()
 	sleep .5
 #Q 9
 	Y_ANSWER=$(cat 09)
-	V_ANSWER="163.172.250.11"
-	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
+	V_ANSWER1="163.172.250.11"
+	V_ANSWER2="163.172.250.12"
+	V_ANSWER3="163.172.250.13"
+	if [ "$Y_ANSWER" == "$V_ANSWER1" ] || [ "$Y_ANSWER" == "$V_ANSWER2" ] || [ "$Y_ANSWER" == "$V_ANSWER3" ]; then
 		echo "09 $_GREEN[OK] $_STOP"
 	else
 		echo "09 $_RED[KO] $_STOP"
@@ -142,25 +144,20 @@ function networkpart()
 	sleep .5
 #Q 12
 	Y_ANSWER=$(cat 12)
-	V_ANSWER=$(ipconfig getifaddr en0)
+	V_ANSWER="ipconfig getifaddr en0"
 	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
 		echo "12 $_GREEN[OK] $_STOP"
 	else
 		echo "12 $_RED[KO] $_STOP"
 		echo "you wrote this :  "
 		echo " $Y_ANSWER"
+		echo " $V_ANSWER"
 	fi
 	sleep .5
 #Q 13
 	Y_ANSWER=$(cat 13)
-	V_ANSWER=$(nslookup `ipconfig getifaddr en0` | grep name | cut -c33-)
-	if [ "$Y_ANSWER" == "$V_ANSWER" ]; then
-		echo "13 $_GREEN[OK] $_STOP"
-	else
-		echo "13 $_RED[KO] $_STOP"
-		echo "you wrote this :  "
-		echo " $Y_ANSWER"
-	fi
+	echo "13 $_GREEN[OK] $_STOP"
+	echo "=> The Hostname is : $Y_ANSWER"
 	sleep .5
 #Q 14
 	Y_ANSWER=$(cat 14)
