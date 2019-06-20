@@ -1,1 +1,1 @@
-error -> chkonfig not found
+systemctl list-units --type service

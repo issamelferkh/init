@@ -15,13 +15,13 @@ partie 2 “System” et 3 “Scripting” -> réaliser sur une VM Debian
 network
 #######
 01 -> okv
-02 -> ok -> pas suuur !!!
+02 -> okv -> pas suuur !!!
 03 -> okv
-04 -> okv
+04 -> ok -> cmd or line of cmd
 05 -> okv
 06 -> okv
 07 -> okv
-08 -> okv
+08 -> okv -> https://www.whoishostingthis.com/#search=slash16.org
 09 -> okv -> cmd "dig +short 42.fr"
 10 -> okv
 11 -> okv
@@ -32,36 +32,34 @@ network
 
 system
 ######
-01 -> ok
-02 -> ok -> hostname or hostname "new name"
-03 -> ok
-04 -> ok
-05 -> ok -> check network: ip address | install ssh: 
-sudo apt-get update
-sudo apt-get install -y openssh-server openssh-client
-06 -> ok
-07 -> ok
-08 -> ok
-09 -> ok
-10 -> ok
-11 -> ok
-12 -> ok
-13 -> ok
-14 -> ok
-15 -> ??? -> how can I know the PID processs
-16 -> ok
-17 -> ??? -> ntconnecta l localhost "ssh test1@localhost" ou fine ? "ssh iel-fer@10.12.8.13"
-18 -> ok
-19 -> prob -> pas de chkonfig cmd
-20 -> ok
-21 -> user reel ???
-22 -> ok -> ??? creer user ou just cmd
-23 -> ??? -> expliquation
-24 -> ok
+01 -> okv
+02 -> okv -> hostname or hostname "new name"
+03 -> okv
+04 -> okv
+05 -> okv ->sudo apt-get update | sudo apt-get install openssh-server openssh-client
+06 -> okv
+07 -> okv
+08 -> okv
+09 -> okv
+10 -> okv
+11 -> okv
+12 -> okv
+13 -> okv
+14 -> okv -> verif with jobs
+15 -> okv -> disown
+16 -> okv
+17 -> okv
+18 -> okv
+19 -> okv
+20 -> okv
+21 -> okv
+22 -> okv
+	23 -> ??? -> expliquation
+24 -> okv
 
 scripts
 #######
-01 -> ok -> Not Verif
+01 -> okv
 02 -> ok -> Not Verif
 03 -> ok -> Not Verif
 

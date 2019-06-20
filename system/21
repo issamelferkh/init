@@ -1,0 +1,1 @@
+sudo grep "home" /etc/passwd

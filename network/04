@@ -1,1 +1,1 @@
-netstat -nr | grep default | grep en
+netstat -nr
