@@ -1,4 +1,3 @@
 #!/bin/bash
-read -p $'please enter your username: ' -e INPUT
+read -p 'Please enter the username: ' INPUT
 sudo pkill -u $INPUT | sudo userdel $INPUT
-echo "The user: " $INPUT "is deleted";
