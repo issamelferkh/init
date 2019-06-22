@@ -12,12 +12,12 @@ partie 1 “Network” -> réaliser sur les Macs
 partie 2 “System” et 3 “Scripting” -> réaliser sur une VM Debian
 ############################################################
 
-network
+network => verified
 #######
 01 -> okv
 02 -> okv -> pas suuur !!!
 03 -> okv
-04 -> ok -> cmd or line of cmd
+04 -> okv -> cmd or line of cmd
 05 -> okv
 06 -> okv
 07 -> okv
