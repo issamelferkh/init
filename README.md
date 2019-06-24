@@ -60,8 +60,8 @@ system
 scripts
 #######
 01 -> okv
-02 -> ok -> Not Verif
-03 -> ok -> Not Verif
+02 -> okv
+03 -> okv
 
 Questions
 #########

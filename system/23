@@ -1,0 +1,16 @@
+Connect With Graphic Session
+----------------------------
+1: make sure that you are in connection with the ssh server (test with ping IP address of the SSH server)
+
+2: You can use a software like putty with the Hostname or IP address of the SSH server and Prt 22, or choice SSH like connection type
+
+Connect With SSH
+----------------
+1: make sure that you are in connection with the ssh server (test with ping IP address of the SSH server)
+
+2: To connect with ssh to an SSH server, type the following command
+ssh username@sshserver
+
+replacing 
+username -> with your username on the SSH server
+sshserver-> with the IP address of the SSH server:
