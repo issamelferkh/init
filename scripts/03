@@ -26,26 +26,27 @@ echo " |_____|_|_|_|_| \__|  \_____|_| |_|\___|\___|_|\_\___|_|   "
 done
 
 cd "$PATHE/network/"
-#Q 1
+echo "-------------Q: 01-------------"
     Y_ANSWER=`cat 01`
     V_ANSWER="ifconfig -l"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "01 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "01 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
-	echo " $V_ANSWER"
     fi
     sleep .5
-#Q 2
+echo "-------------Q: 02-------------"
     Y_ANSWER=$(cat 02 | head -n 1)
     Y_ANSWER1=$(cat 02 | tail -n 1)
     echo "02 $_GREEN[OK] $_STOP"
     echo "=> a) : $Y_ANSWER "
     echo "=> b) : $Y_ANSWER1 "
     sleep .5
-#Q 3
+echo "-------------Q: 03-------------"
     Y_ANSWER=`sh 03`
     V_ANSWER=$(ifconfig en1)
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
@@ -56,129 +57,145 @@ cd "$PATHE/network/"
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 4
+echo "-------------Q: 04-------------"
     Y_ANSWER=`sh 04`
-    V_ANSWER=`netstat -nr`
+    V_ANSWER=`netstat -nr | grep default | grep en`
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "04 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "04 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 5
+echo "-------------Q: 05-------------"
     Y_ANSWER=`cat 05`
     V_ANSWER="nslookup slash16.org"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "05 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "05 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 6
+echo "-------------Q: 06-------------"
     Y_ANSWER=`cat 06`
     V_ANSWER="/etc/resolv.conf"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "06 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "06 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 7
+echo "-------------Q: 07-------------"
     Y_ANSWER=`cat 07`
     V_ANSWER="nslookup slash16.org 8.8.8.8"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "07 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "07 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 8
+echo "-------------Q: 08-------------"
     Y_ANSWER=`cat 08`
     V_ANSWER="AWS (Amazon Web Services)"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "08 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "08 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 9
+echo "-------------Q: 09-------------"
     Y_ANSWER=`cat 09`
     V_ANSWER1="163.172.250.11"
     V_ANSWER2="163.172.250.12"
     V_ANSWER3="163.172.250.13"
     if [ "$Y_ANSWER" = "$V_ANSWER1" ] || [ "$Y_ANSWER" = "$V_ANSWER2" ] || [ "$Y_ANSWER" = "$V_ANSWER3" ]; then
         echo "09 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "09 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 10
-    Y_ANSWER=$`cat 10`
+echo "-------------Q: 10-------------"
+    Y_ANSWER=`cat 10`
     V_ANSWER="traceroute slash16.org"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "10 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "10 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 11
+echo "-------------Q: 11-------------"
     Y_ANSWER=`cat 11`
     V_ANSWER="nat 10.21.1.1"
-    if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
-        echo "11 $_GREEN[OK] $_STOP"
-    else
-        echo "11 $_RED[KO] $_STOP"
+    echo "11 $_GREEN[OK] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
-    fi
     sleep .5
-#Q 12
+echo "-------------Q: 12-------------"
     Y_ANSWER=`cat 12`
     V_ANSWER="ipconfig getifaddr en0"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "12 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "12 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
-        echo " $V_ANSWER"
     fi
     sleep .5
-#Q 13
+echo "-------------Q: 13-------------"
     Y_ANSWER=`cat 13`
-    echo "13 $_GREEN[OK] $_STOP"
-    echo "=> The Hostname is : $Y_ANSWER"
+        echo "13 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     sleep .5
-#Q 14
+echo "-------------Q: 14-------------"
     Y_ANSWER=`cat 14`
     V_ANSWER="/etc/hosts"
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "14 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "14 $_RED[KO] $_STOP"
         echo "you wrote this :  "
         echo " $Y_ANSWER"
     fi
     sleep .5
-#Q 15
+echo "-------------Q: 15-------------"
     Y_ANSWER=`cat 15`
     V_ANSWER='echo "46.19.122.85    intra.42.fr" >> /etc/hosts'
     if [ "$Y_ANSWER" = "$V_ANSWER" ]; then
         echo "15 $_GREEN[OK] $_STOP"
+        echo "you wrote this :  "
+        echo " $Y_ANSWER"
     else
         echo "15 $_RED[KO] $_STOP"
         echo "you wrote this :  "
